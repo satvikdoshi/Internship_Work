@@ -17,8 +17,8 @@ def send_mail(receiver_email, spoofed_email, spoofed_name, message, subject):
         
         smtp_host = "smtp-relay.brevo.com"
         smtp_port = 587
-        smtp_username = "stcsessiontesting@gmail.com"
-        smtp_password = "mQd5K3phZM24WcOj"
+        smtp_username = "USERNAME"
+        smtp_password = "PASSWORD"
 
         server = smtplib.SMTP(smtp_host, smtp_port)
         server.starttls()
@@ -30,11 +30,11 @@ def send_mail(receiver_email, spoofed_email, spoofed_name, message, subject):
     except Exception as e:
         print(traceback.format_exc())
 
-receiver_email = ['temppur22@gmail.com']
+receiver_email = ['MAILS']
 spoofed_email = 'abc@abc.com'
  
-spoofed_name = 'rushi' 
-message = 'you have been made the head of the club'
+spoofed_name = 'xyz' 
+message = 'MESSAGE'
 subject = 'this is the title of the spoofed email'
 
 for i in range(len(receiver_email)):
